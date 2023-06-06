@@ -30,11 +30,11 @@ class LibraryPage extends StatelessWidget {
       }
     }
 
-    Book test1 = Book("ali", false, "3", true, "sds", "ali",1397);
+    Book test1 = Book("ali", false, "3", true, "sds", "ali", 1397);
     List<Book> _items = [];
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false, 
+        automaticallyImplyLeading: false,
         centerTitle: true,
         backgroundColor: Colors.white,
         title: Text(
@@ -49,20 +49,10 @@ class LibraryPage extends StatelessWidget {
           PopupMenuButton<int>(
             color: Colors.black87,
             onSelected: (value) {
-              // Handle menu item selection
               if (value == 0) {
-                // Option 1 selected
-                // Perform desired action
               } else if (value == 1) {
-                // Option 2 selected
-                // Perform desired action
               } else if (value == 2) {
-                // Option 3 selected
-                // Perform desired action
-              } else if (value == 4) {
-                // Option 4 selected
-                // Perform desired action
-              }
+              } else if (value == 4) {}
             },
             itemBuilder: (context) => [
               PopupMenuItem(

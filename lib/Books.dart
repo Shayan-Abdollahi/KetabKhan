@@ -5,16 +5,16 @@ import 'Desceription.dart';
 class Books extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Book test1 = Book("ali", false, "3", true, "sds", "ali",1397);
+    Book test1 = Book("ali", false, "3", true, "sds", "ali", 1397);
     List<Book> _items = [];
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
-         leading: IconButton(
-            icon : Icon(Icons.arrow_back),
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.of(context).pop(),
-            color: Colors.black87 ),
+            color: Colors.black87),
         title: Text(
           'کتاب‌ها',
           style: TextStyle(
@@ -27,17 +27,9 @@ class Books extends StatelessWidget {
           PopupMenuButton<int>(
             color: Colors.black87,
             onSelected: (value) {
-              // Handle menu item selection
               if (value == 0) {
-                // Option 1 selected
-                // Perform desired action
               } else if (value == 1) {
-                // Option 2 selected
-                // Perform desired action
-              } else if (value == 2) {
-                // Option 3 selected
-                // Perform desired action
-              }
+              } else if (value == 2) {}
             },
             itemBuilder: (context) => [
               PopupMenuItem(

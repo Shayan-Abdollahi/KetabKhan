@@ -120,9 +120,7 @@ class _DesceriptionState extends State<Desceription> {
                 alignment: Alignment.center,
               ),
               InkWell(
-                onTap: () {
-                  // Handle the buy button tap event
-                },
+                onTap: () {},
                 child: Padding(
                   padding: EdgeInsets.all(20),
                   child: Container(
@@ -163,21 +161,15 @@ class _DesceriptionState extends State<Desceription> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       InkWell(
-                        onTap: () {
-                          // Handle the click event for the first icon
-                        },
+                        onTap: () {},
                         child: Icon(Icons.chrome_reader_mode, size: 40),
                       ),
                       InkWell(
-                        onTap: () {
-                          // Handle the click event for the second icon
-                        },
+                        onTap: () {},
                         child: Icon(Icons.download, size: 40),
                       ),
                       InkWell(
-                        onTap: () {
-                          // Handle the click event for the third icon
-                        },
+                        onTap: () {},
                         child: Icon(Icons.hearing, size: 40),
                       ),
                     ],
@@ -213,11 +205,7 @@ class _DesceriptionState extends State<Desceription> {
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
                   focusNode: _opinionTextFieldFocusNode,
-                  onChanged: (value) {
-                    // setState(() {
-                    //   _userOpinion = value;
-                    // });
-                  },
+                  onChanged: (value) {},
                   decoration: InputDecoration(
                     labelText: "نظر شما",
                     border: OutlineInputBorder(),
@@ -254,15 +242,7 @@ class _DesceriptionState extends State<Desceription> {
               ),
               SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () {
-                  // if (_userOpinion.isNotEmpty && _userRating > 0) {
-                  //   setState(() {
-                  //     widget._book.userOpinions.add("امتیاز: $_userRating, نظر: $_userOpinion");
-                  //     _userOpinion = '';
-                  //     _userRating = 0;
-                  //   });
-                  // }
-                },
+                onPressed: () {},
                 child: Text("ثبت نظر"),
               ),
             ],

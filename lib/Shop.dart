@@ -59,9 +59,6 @@ class _ShopState extends State<Shop> {
             title: TextField(
               controller: _searchController,
               onChanged: (value) {
-                // Handle search functionality here
-                // You can filter the _items list based on the search value
-                // and update the UI accordingly
                 print(value);
               },
               decoration: InputDecoration(
@@ -77,10 +74,7 @@ class _ShopState extends State<Shop> {
               PopupMenuButton<int>(
                 color: Colors.black87,
                 onSelected: (value) {
-                  // Handle menu item selection
                   if (value == 0) {
-                    // Option 1 selected
-                    // Perform desired action
                   } else if (value == 1) {
                   } else if (value == 2) {}
                 },

@@ -62,7 +62,6 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                // Perform login logic here
                 Navigator.pushNamed(context, '/home');
               },
               child: Text('ورود'),
@@ -116,7 +115,6 @@ class SignupPage extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                // Perform signup logic here
                 Navigator.pushNamed(context, '/home');
               },
               child: Text('ثبت نام'),
@@ -140,21 +138,18 @@ class _HomePageState extends State<HomePage> {
       _currentIndex = index;
     });
     if (index == 2) {
-      // Check if the "Library" tab is tapped
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Profile()),
       );
     }
     if (index == 1) {
-      // Check if the "Library" tab is tapped
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => LibraryPage()),
       );
     }
     if (index == 3) {
-      // Check if the "Library" tab is tapped
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Shop()),
@@ -165,11 +160,6 @@ class _HomePageState extends State<HomePage> {
   Book test1 = Book("ali", false, "3", true, "sds", "ali", 1397);
   List<Book> _items = [];
 
-  // @override
-  // void initState(){
-  //   super.initState;
-  //   fetchItems();
-  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -282,37 +272,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-// Card generateItem(Book book,context){
-//   return Card(
-//     elevation: 5,
-//     child : InkWell(
-//       onTap: (){
-//         Navigator.of(context).push(MaterialPageRoute(
-//           builder: (context)=>Desceription(book)
-//         ));
-//       },
-//     child: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [
-//       Container(
-//         width: 450,
-//         height: 140,
-//         child: Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/330px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg"),
-//       ),
-//       Text(
-//         "ali",
-//         style: TextStyle(
-//           fontFamily: "B-NAZANIN",
-//           color: Colors.black38,
-//           fontSize: 13
-//         ),
-//       ) ,
-//       Text(
-//         "bali",
-//         style: TextStyle(
-//           fontFamily: "B-NAZANIN",
-//           color: Colors.black38,
-//           fontSize: 13
-//         ),
-//       )
-//   ],)),),
-//   );
-// }
